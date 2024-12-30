@@ -1,0 +1,38 @@
+Caused by the fungus Venturia inaequalis
+Caused by the fungus Botryosphaeria obtusa
+Caused by the rust fungus Gymnosporangium juniperi-virginianae
+Healthy apple plant
+Healthy blueberry plant
+Caused by the fungus Podosphaera clandestina
+Healthy cherry plant
+Caused by the fungus Cercospora zeae-maydis
+Caused by the fungus Puccinia sorghi
+Caused by the fungus Exserohilum turcicum
+Healthy corn plant
+Caused by the fungus Guignardia bidwellii
+Caused by a complex of fungal pathogens including Phaeomoniella chlamydospora
+Caused by the fungus Isariopsis clavispora
+Healthy grape plant
+Caused by the bacterium Candidatus Liberibacter asiaticus
+Caused by the bacterium Xanthomonas campestris pv. pruni
+Healthy peach plant
+Caused by the bacterium Xanthomonas campestris pv. vesicatoria
+Healthy bell pepper plant
+Caused by the fungus Alternaria solani
+Caused by the oomycete Phytophthora infestans
+Healthy potato plant
+Healthy raspberry plant
+Healthy soybean plant
+Caused by the fungus Erysiphe cichoracearum
+Caused by the fungus Diplocarpon earlianum
+Healthy strawberry plant
+Caused by the bacterium Xanthomonas campestris pv. vesicatoria
+Caused by the fungus Alternaria solani
+Caused by the oomycete Phytophthora infestans
+Caused by the fungus Passalora fulva
+Caused by the fungus Septoria lycopersici
+Caused by the mite Tetranychus urticae
+Caused by the fungus Corynespora cassiicola
+Caused by the virus Tomato yellow leaf curl virus
+Caused by the virus Tomato mosaic virus
+Healthy tomato plant

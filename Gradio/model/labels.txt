@@ -1,0 +1,2 @@
+0 No Sort of Diseases
+1 Disease Detected
