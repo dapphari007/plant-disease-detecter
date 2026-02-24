@@ -1,10 +1,7 @@
-# Model files (too large for git — host on HF Hub or use Git LFS)
-*.keras
-*.h5
+# Model files (large files tracked via Git LFS)
 *.pb
 *.tflite
 *.onnx
-model/
 
 # Python
 __pycache__/
