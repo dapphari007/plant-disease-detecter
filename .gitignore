@@ -1,0 +1,44 @@
+# Model files (too large for git — host on HF Hub or use Git LFS)
+*.keras
+*.h5
+*.pb
+*.tflite
+*.onnx
+model/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+env/
+.env/
+.venv/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Old/duplicate project directories
+Plant_Disease_Detection-main/
+Gradio/

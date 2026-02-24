@@ -1,86 +1,86 @@
-# Plant Disease Prediction System
-
-## Project Overview
-The Plant Disease Prediction System is an AI-powered application designed to detect and classify plant diseases from images of leaves. By leveraging machine learning and computer vision techniques, the system provides farmers with an efficient tool for early disease detection, enabling timely interventions to minimize crop losses and ensure better agricultural productivity.
-
 ---
+title: Plant Disease Detection
+emoji: 🌿
+colorFrom: green
+colorTo: yellow
+sdk: gradio
+sdk_version: 5.9.1
+app_file: app.py
+pinned: false
+license: other
+---
+
+# Plant Disease Recognition System
+
+AI-powered leaf disease detection and classification system for farmers. Upload an image of a plant leaf and get instant disease identification with remedies, symptoms, pesticide recommendations, and more.
 
 ## Features
-- **Real-Time Disease Detection:** Upload a leaf image and get instant disease classification.
-- **Disease Information:** Detailed descriptions and symptoms for each detected disease.
-- **Preventive Measures:** Suggestions for treatment and prevention.
-- **User-Friendly Interface:** Accessible via a web-based UI built with Streamlit.
-- **Multi-Language Support:** Enhances accessibility for rural and non-English speaking users.
 
----
+- **38 Disease Classes** — covers Apple, Blueberry, Cherry, Corn, Grape, Orange, Peach, Pepper, Potato, Raspberry, Soybean, Squash, Strawberry, and Tomato
+- **Real-Time Prediction** — instant disease classification with confidence scores
+- **Comprehensive Reports** — cause, symptoms, remedies, pesticides, yield rates, and seed resistance varieties
+- **Multi-Language Support** — English and Tamil
 
-## System Architecture
-1. **Data Collection:** Diverse dataset of healthy and diseased leaf images.
-2. **Preprocessing:** Image normalization and data augmentation for robustness.
-3. **Model Training:** Transfer learning with a Convolutional Neural Network (e.g., ResNet50).
-4. **Prediction:** Confidence scores and disease classification.
-5. **User Interface:** Web-based application for ease of use.
+## Project Structure
 
----
+```
+├── app.py                  # Main Gradio application
+├── requirements.txt        # Python dependencies
+├── packages.txt            # System packages for HF Spaces
+├── data/
+│   └── labels/             # Disease metadata (38 classes)
+│       ├── labels.txt
+│       ├── causes.txt
+│       ├── symptoms.txt
+│       ├── remedies.txt
+│       ├── categories.txt
+│       ├── pesticides.txt
+│       ├── climatic_conditions.txt
+│       ├── common_plants.txt
+│       ├── extent_with.txt
+│       ├── extent_without.txt
+│       ├── seed_resistance.txt
+│       └── yield_rates.txt
+├── model/                  # Model directory (not tracked in git)
+│   └── trained_model.keras
+├── notebooks/              # Training and testing notebooks
+├── LICENSE.md
+└── README.md
+```
 
-## Technology Stack
-- **Programming Language:** Python
-- **Frameworks:** TensorFlow, Keras
-- **Web Interface:** Streamlit
-- **Deployment:** Compatible with cloud platforms or local environments
+## Setup
 
----
+### For Hugging Face Spaces
 
-## Installation
+1. Upload `trained_model.keras` to the `model/` directory in your HF Space
+2. The Space will auto-build using `requirements.txt` and `packages.txt`
 
-### Prerequisites
-- Python 3.7 or higher
-- pip (Python package manager)
+### For Local Development
 
-### Steps
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/plant-disease-prediction.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd plant-disease-prediction
-   ```
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Run the application:
-   ```bash
-   streamlit run app.py
-   ```
+```bash
+pip install -r requirements.txt
+# Place your trained_model.keras in model/
+python app.py
+```
 
----
+## Tech Stack
 
-## Dataset
-The model is trained on the PlantVillage dataset, supplemented with additional images to ensure diverse crop and disease representation. 
+- **Python** — Core language
+- **TensorFlow / Keras** — CNN model for disease classification
+- **Gradio** — Web interface
+- **Dataset** — PlantVillage (87K RGB images, 38 classes, 80/20 train-validation split)
 
----
+## Model
 
-## Results
-- **Accuracy:** 95% on the testing dataset
-- **Evaluation Metrics:** High precision, recall, and F1-scores for most disease categories.
+- Architecture: Convolutional Neural Network
+- Input: 128x128 RGB images
+- Accuracy: ~95% on test dataset
+- Format: `.keras` (TensorFlow SavedModel)
 
----
+> **Note:** The model file (`trained_model.keras`, ~90MB) is excluded from git tracking. Upload it directly to your Hugging Face Space or use Git LFS.
 
-## Future Enhancements
-- Expand the dataset to cover more crops and diseases.
-- Integrate IoT devices for real-time monitoring.
-- Develop a mobile app for wider accessibility.
-- Incorporate weather and soil condition data for a holistic approach.
+## License
 
----
+This project is under a **proprietary license**. See [LICENSE.md](LICENSE.md) for details.
 
-## Contributing
-Contributions are welcome! Please follow these steps:
-1. Fork the repository.
-2. Create a feature branch (`git checkout -b feature-name`).
-3. Commit your changes (`git commit -m 'Add feature'`).
-4. Push to the branch (`git push origin feature-name`).
-5. Open a Pull Request.
-
+Authorized contributors: **DHINAKARAN**, **PRAHIL A**, **HEMANTH KUMAR V**
